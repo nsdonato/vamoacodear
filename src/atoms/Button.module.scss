@@ -1,0 +1,26 @@
+@use '../settings/border';
+@use '../settings/colors';
+@use '../settings/spacing';
+@use '../settings/typography';
+
+.btn {
+	color: colors.$text-primary;
+	font: inherit;
+	font-weight: 700;
+	text-decoration: none;
+	border-radius: border.$radius-xl;
+
+	&--large {
+		padding: spacing.$xs spacing.$lg;
+		font: typography.$b400-bold;
+		width: 35em;
+	}
+
+	&--primary {
+		&:hover {
+			background: colors.$cta-primary-hover;
+			color: colors.$text-secondary-hover;
+			border: border.$radius-default solid colors.$text-secondary-hover;
+		}
+	}
+}

@@ -1,12 +1,8 @@
 import react from '@vitejs/plugin-react'
 import { defineConfig } from 'vite'
-
-import postcss from './postcss.config.js'
+import svgr from 'vite-plugin-svgr'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-	plugins: [react()],
-	css: {
-		postcss,
-	},
+	plugins: [svgr(), react()],
 })

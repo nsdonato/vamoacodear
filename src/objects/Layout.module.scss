@@ -1,0 +1,18 @@
+@use '../settings/spacing';
+@use '../settings/sizes';
+
+.layout {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+
+	@media (min-width: sizes.$tablet) {
+		margin-top: spacing.$section-huge;
+	}
+
+	@media (min-width: sizes.$desktop) {
+		margin-top: spacing.$section-mega;
+	}
+}

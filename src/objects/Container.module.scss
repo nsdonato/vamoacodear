@@ -1,0 +1,12 @@
+@use '../settings/sizes';
+
+.container {
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	max-width: 100%;
+
+	@media (max-width: sizes.$mobile-xs) {
+		overflow: hidden;
+	}
+}

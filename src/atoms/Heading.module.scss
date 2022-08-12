@@ -1,0 +1,20 @@
+@use '../tools/typography';
+@use '../settings/colors';
+
+.heading {
+	&--large {
+		@include typography.h500-regular;
+	}
+
+	&--medium {
+		@include typography.h400-regular;
+	}
+
+	&--small {
+		@include typography.h100-regular;
+	}
+
+	&--white {
+		color: colors.$text-secondary;
+	}
+}
