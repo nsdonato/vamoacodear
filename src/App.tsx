@@ -9,7 +9,7 @@ import { Layout } from './objects/Layout'
 function App() {
 	return (
 		<Layout>
-			<Avatar size='xxl' src='./img/noe.png' alt='' />
+			<Avatar size='xxl' src='/noe.png' alt='' />
 			<Heading level='h1'>@vamoacodear</Heading>
 			<Heading level='h2'>Noe ✨ Frontend Dev ✨</Heading>
 			<Container tag='section'>
