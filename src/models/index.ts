@@ -1,15 +1,19 @@
 export const socials = [
 	{
-		name: 'Instagram',
-		url: 'https://www.instagram.com/vamoacodear/',
-	},
-	{
 		name: 'Twitch',
 		url: 'https://www.twitch.tv/vamoacodear',
 	},
 	{
 		name: 'Twitter',
 		url: 'https://twitter.com/vamoacodear',
+	},
+	{
+		name: 'Youtube',
+		url: 'https://www.youtube.com/c/vamoacodear?sub_confirmation=1',
+	},
+	{
+		name: 'Instagram',
+		url: 'https://www.instagram.com/vamoacodear/',
 	},
 	{
 		name: 'Discord',
