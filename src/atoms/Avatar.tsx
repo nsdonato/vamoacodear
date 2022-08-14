@@ -1,33 +1,24 @@
+import { classNames } from '../shared/classNames'
 import styles from './Avatar.module.scss'
 
 export interface AvatarProps {
 	src: string
 	alt?: string
-	size?: 'small' | 'medium' | 'large' | 'xl' | 'xxl'
+	size?: 'small' | 'medium' | 'large' | 'xl' | 'xxl' | 'huge' | 'mega'
 }
 
-const sizes = {
-	small: 40,
-	medium: 48,
-	large: 64,
-	xl: 74,
-	xxl: 174,
-}
-
-export const Avatar = ({ src, alt = '', size = 'medium' }: AvatarProps) => {
-	const pxSize = sizes[size]
+export const Avatar = ({ src, alt = '', size = 'huge' }: AvatarProps) => {
+	const componentProps = {
+		className: classNames(styles['avatar'], styles[`avatar--${size}`]),
+	}
 
 	return (
-		<span
-			className={styles['avatar']}
-			style={{ width: `${pxSize}px`, height: `${pxSize}px` }}
-		>
+		<span {...componentProps}>
 			<img
 				src={src}
 				alt={alt}
-				width={pxSize}
-				height={pxSize}
 				style={{ objectFit: 'cover' }}
+				{...componentProps}
 			/>
 		</span>
 	)

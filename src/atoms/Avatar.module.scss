@@ -1,8 +1,55 @@
-@use "../tools/typography";
+@use '../tools/typography';
+@use '../settings/spacing';
+@use '../settings/sizes';
 
 .avatar {
-  position: relative;
-  display: inline-block;
-  overflow: hidden;
-  border-radius: 50%;
+	position: relative;
+	display: inline-block;
+	overflow: hidden;
+	border-radius: 50%;
+
+	&--small {
+		width: spacing.$sm;
+		height: spacing.$sm;
+	}
+
+	&--medium {
+		width: spacing.$md;
+		height: spacing.$md;
+	}
+
+	&--large {
+		width: spacing.$lg;
+		height: spacing.$lg;
+	}
+
+	&--xl {
+		width: spacing.$xl;
+		height: spacing.$xl;
+	}
+
+	&--xxl {
+		width: spacing.$xxl;
+		height: spacing.$xxl;
+	}
+
+	&--huge {
+		width: spacing.$huge;
+		height: spacing.$huge;
+	}
+
+	&--mega {
+		width: spacing.$mega;
+		height: spacing.$mega;
+	}
+
+	@media (min-width: sizes.$tablet) {
+		width: spacing.$huge;
+		height: spacing.$huge;
+	}
+
+	@media (min-width: sizes.$desktop) {
+		width: spacing.$mega;
+		height: spacing.$mega;
+	}
 }

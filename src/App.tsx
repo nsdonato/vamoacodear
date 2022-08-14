@@ -1,25 +1,31 @@
 import './App.css'
 
 import { Avatar } from './atoms/Avatar'
-import { Button } from './atoms/Button'
 import { Heading } from './atoms/Heading'
+import { IconButton } from './atoms/IconButton'
+import { socials } from './models'
 import { Container } from './objects/Container'
 import { Layout } from './objects/Layout'
 
 function App() {
 	return (
 		<Layout>
-			<Avatar size='xxl' src='/noe.png' alt='' />
-			<Heading level='h1'>@vamoacodear</Heading>
-			<Heading level='h2'>Noe ✨ Frontend Dev ✨</Heading>
+			<Avatar src='/noe.png' />
+			<Heading level='h4'>Noe ✨ Frontend Dev ✨</Heading>
 			<Container tag='section'>
-				{/* <IconButton icon='twitch'>Twitch</IconButton> */}
-				<Button>Twitch</Button>
-				<Button>TikTok</Button>
-				<Button>Youtube</Button>
-				<Button>Twitter</Button>
-				<Button>Discord</Button>
+				{socials.map((social) => {
+					return (
+						<IconButton key={social.name} icon={social.name.toLowerCase()}>
+							{social.name}
+						</IconButton>
+					)
+				})}
 			</Container>
+			<footer>
+				<Heading level='h2' typo='major'>
+					VamoacodeaR - {new Date().getFullYear()}
+				</Heading>
+			</footer>
 		</Layout>
 	)
 }

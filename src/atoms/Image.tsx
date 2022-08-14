@@ -1,15 +1,15 @@
 import { classNames } from '../shared/classNames'
-import styles from './Icon.module.scss'
+import styles from './Image.module.scss'
 
-export interface IconProps {
+export interface ImageProps {
 	icon: string
 	size?: 'small' | 'medium' | 'large' | 'xl'
 }
 
-export const Icon = ({ size = 'xl', icon }: IconProps) => {
+export const Image = ({ size = 'xl', icon }: ImageProps) => {
 	return (
 		<img
-			src={`../img/${icon}.png`}
+			src={`/${icon}.png`}
 			className={classNames(styles['icon'], styles[`icon--${size}`])}
 		/>
 	)
