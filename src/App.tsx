@@ -1,8 +1,6 @@
 import './App.css'
 
-import { Avatar } from './atoms/Avatar'
-import { Button } from './atoms/Button'
-import { Heading } from './atoms/Heading'
+import { Avatar, Button, Heading } from './atoms'
 import { Container } from './objects/Container'
 import { Layout } from './objects/Layout'
 
@@ -13,7 +11,6 @@ function App() {
 			<Heading level='h1'>@vamoacodear</Heading>
 			<Heading level='h2'>Noe ✨ Frontend Dev ✨</Heading>
 			<Container tag='section'>
-				{/* <IconButton icon='twitch'>Twitch</IconButton> */}
 				<Button>Twitch</Button>
 				<Button>TikTok</Button>
 				<Button>Youtube</Button>
