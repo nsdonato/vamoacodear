@@ -4,7 +4,7 @@ import styles from './Button.module.scss'
 export interface ButtonProps {
 	mode?: 'primary'
 	size?: 'large'
-	children: string
+	children: React.ReactNode
 }
 
 interface Overload {

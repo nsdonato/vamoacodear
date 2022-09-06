@@ -1,62 +1,24 @@
 @use '../settings/border';
 @use '../settings/colors';
 @use '../settings/spacing';
+@use '../settings/sizes';
 @use '../settings/typography';
 
 .icon-btn {
-	display: inline-flex;
-	align-items: center;
-	justify-content: center;
-	// width: var(--size);
-	// height: var(--size);
-	font-family: inherit;
-	border: none;
-	border-radius: 50%;
-	transition: all 0.2s;
-
-	&--small {
-		--size: 3rem;
-	}
-
-	&--medium {
-		--size: 4rem;
-	}
-
-	&--large {
-			width: 35em;
-	}
-
-	&--light {
-		color: colors.$text-primary;
-		background: colors.$white;
-
-		&:hover {
-			background: colors.$white-hover;
-		}
-	}
-
-	// &--dark {
-	//   color: colors.$white;
-	//   background: colors.$cta-secondary;
-
-	//   &:hover {
-	//     background: colors.$cta-secondary-hover;
-	//   }
-	// }
-}
-
-
-.btn {
+	display: flex;
 	color: colors.$text-primary;
 	font: inherit;
 	font-weight: 700;
 	text-decoration: none;
+	border: none;
 	border-radius: border.$radius-xl;
+	transition: all 0.2s;
+	width: sizes.$mobile-xs;
 
 	&--large {
 		padding: spacing.$xs spacing.$lg;
 		font: typography.$b400-bold;
-		width: 35em;
+		margin: spacing.$tiny;
 	}
 
 	&--primary {
@@ -66,5 +28,29 @@
 			border: border.$radius-default solid colors.$text-primary-hover;
 		}
 	}
-}
 
+	&--centered {
+		margin: 0 auto;
+	}
+
+	@media (min-width: sizes.$mobile-xs) {
+		width: sizes.$mobile-xs;
+		&--large {
+			padding: spacing.$tiny spacing.$tiny;
+		}
+	}
+
+	@media (min-width: sizes.$tablet) {
+		width: sizes.$mobile;
+		&--large {
+			padding: spacing.$xs spacing.$xs;
+		}
+	}
+
+	@media (min-width: sizes.$desktop) {
+		width: sizes.$mobile;
+		&--large {
+			padding: spacing.$xs spacing.$xs;
+		}
+	}
+}

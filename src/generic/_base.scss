@@ -34,7 +34,7 @@ html {
 body {
 	color: colors.$text-primary;
 	font: typography.$b500-regular;
-	font-family: #{typography.$font-family};
+	font-family: #{typography.$font-family-redHat};
 	background-color: colors.$bg-primary;
 
 	* {

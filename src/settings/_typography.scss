@@ -1,31 +1,64 @@
-$font-family: 'Roboto, Arial, sans-serif';
+$font-family-redHat: 'RedHat, Arial, sans-serif';
+$font-family-major: 'Major, Arial, sans-serif';
 
 // Body sizes
-$b500-bold: 700 1.31rem / 1.33 #{$font-family};
-$b500-regular: 1.31rem / 1.33 #{$font-family};
-$b400-bold: 700 1.125rem / 1.55 #{$font-family};
-$b400-regular: 1.125rem / 1.55 #{$font-family};
-$b300-bold: 700 1rem / 1.5 #{$font-family};
-$b300-regular: 1rem / 1.5 #{$font-family};
-$b200-bold: 700 0.875rem / 1.42 #{$font-family};
-$b200-regular: 0.875rem / 1.42 #{$font-family};
+$b500-bold: 700 1.31rem / 1.33 #{$font-family-redHat};
+$b500-regular: 1.31rem / 1.33 #{$font-family-redHat};
+$b400-bold: 700 1.125rem / 1.55 #{$font-family-redHat};
+$b400-regular: 1.125rem / 1.55 #{$font-family-redHat};
+$b300-bold: 700 1rem / 1.5 #{$font-family-redHat};
+$b300-regular: 1rem / 1.5 #{$font-family-redHat};
+$b200-bold: 700 0.875rem / 1.42 #{$font-family-redHat};
+$b200-regular: 0.875rem / 1.42 #{$font-family-redHat};
 
 // Desktop title sizes
-$xl-h500-regular: 5rem / 1.05 #{$font-family};
-$xl-h400-regular: 4rem / 1.05 #{$font-family};
-$xl-h300-regular: 3.18rem / 1.17 #{$font-family};
-$xl-h200-regular: 2rem / 1.25 #{$font-family};
-$xl-h100-bold: 700 1.5rem / 1.33 #{$font-family};
-$xl-h100-regular: 1.5rem / 1.33 #{$font-family};
+$xl-h500-regular: 5rem / 1.05 #{$font-family-redHat};
+$xl-h400-regular: 4rem / 1.05 #{$font-family-redHat};
+$xl-h300-regular: 3.18rem / 1.17 #{$font-family-redHat};
+$xl-h200-regular: 2rem / 1.25 #{$font-family-redHat};
+$xl-h100-bold: 700 1.5rem / 1.33 #{$font-family-redHat};
+$xl-h100-regular: 1.5rem / 1.33 #{$font-family-redHat};
 
 // Tablet title sizes
-$lg-h500-regular: 4.43rem / 1.12 #{$font-family};
-$lg-h400-regular: 3.5rem / 1.14 #{$font-family};
+$lg-h500-regular: 4.43rem / 1.12 #{$font-family-redHat};
+$lg-h400-regular: 3.5rem / 1.14 #{$font-family-redHat};
 
 // Mobile title sizes
-$sm-h500-regular: 3.18rem / 1.01 #{$font-family};
-$sm-h400-regular: 2.62rem / 1.14 #{$font-family};
-$sm-h300-regular: 2rem / 1.25 #{$font-family};
-$sm-h200-regular: 1.5rem / 1.33 #{$font-family};
-$sm-h100-bold: 700 1.31rem / 1.33 #{$font-family};
-$sm-h100-regular: 1.31rem / 1.33 #{$font-family};
+$sm-h500-regular: 3.18rem / 1.01 #{$font-family-redHat};
+$sm-h400-regular: 2.62rem / 1.14 #{$font-family-redHat};
+$sm-h300-regular: 2rem / 1.25 #{$font-family-redHat};
+$sm-h200-regular: 1.5rem / 1.33 #{$font-family-redHat};
+$sm-h100-bold: 700 1.31rem / 1.33 #{$font-family-redHat};
+$sm-h100-regular: 1.31rem / 1.33 #{$font-family-redHat};
+
+// major
+
+// Body sizes
+$b500-bold-major: 700 1.31rem / 1.33 #{$font-family-major};
+$b500-regular-major: 1.31rem / 1.33 #{$font-family-major};
+$b400-bold-major: 700 1.125rem / 1.55 #{$font-family-major};
+$b400-regular-major: 1.125rem / 1.55 #{$font-family-major};
+$b300-bold-major: 700 1rem / 1.5 #{$font-family-major};
+$b300-regular-major: 1rem / 1.5 #{$font-family-major};
+$b200-bold-major: 700 0.875rem / 1.42 #{$font-family-major};
+$b200-regular-major: 0.875rem / 1.42 #{$font-family-major};
+
+// Desktop title sizes
+$xl-h500-regular-major: 5rem / 1.05 #{$font-family-major};
+$xl-h400-regular-major: 4rem / 1.05 #{$font-family-major};
+$xl-h300-regular-major: 3.18rem / 1.17 #{$font-family-major};
+$xl-h200-regular-major: 2rem / 1.25 #{$font-family-major};
+$xl-h100-bold-major: 700 1.5rem / 1.33 #{$font-family-major};
+$xl-h100-regular-major: 1.5rem / 1.33 #{$font-family-major};
+
+// Tablet title sizes
+$lg-h500-regular-major: 4.43rem / 1.12 #{$font-family-major};
+$lg-h400-regular-major: 3.5rem / 1.14 #{$font-family-major};
+
+// Mobile title sizes
+$sm-h500-regular-major: 3.18rem / 1.01 #{$font-family-major};
+$sm-h400-regular-major: 2.62rem / 1.14 #{$font-family-major};
+$sm-h300-regular-major: 2rem / 1.25 #{$font-family-major};
+$sm-h200-regular-major: 1.5rem / 1.33 #{$font-family-major};
+$sm-h100-bold-major: 700 1.31rem / 1.33 #{$font-family-major};
+$sm-h100-regular-major: 1.31rem / 1.33 #{$font-family-major};

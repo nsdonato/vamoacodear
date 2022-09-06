@@ -1,20 +1,24 @@
+@use '../settings/typography' as typographyFam;
 @use '../tools/typography';
 @use '../settings/colors';
+@use '../settings/spacing';
 
 .heading {
-	&--large {
-		@include typography.h500-regular;
-	}
-
-	&--medium {
-		@include typography.h400-regular;
-	}
-
-	&--small {
-		@include typography.h100-regular;
-	}
+	margin: spacing.$md;
+	color: colors.$text-primary;
+	font-family: #{typographyFam.$font-family-redHat};
+	@include typography.h100-regular;
 
 	&--white {
 		color: colors.$text-secondary;
+	}
+
+	&--major {
+		font-family: #{typographyFam.$font-family-major};
+		@include typography.h100-regular-major;
+	}
+
+	&--centered {
+		text-align: center;
 	}
 }

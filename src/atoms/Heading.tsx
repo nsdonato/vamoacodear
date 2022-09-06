@@ -5,18 +5,20 @@ import styles from './Heading.module.scss'
 
 export interface HeadingProps {
 	level?: 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6'
-	size?: 'small' | 'medium' | 'large'
 	id?: string
 	children: React.ReactNode
 	color?: 'white' | 'black'
+	align?: string
+	typo?: string
 }
 
 export const Heading = ({
 	children,
 	level = 'h1',
-	size = 'small',
 	id,
 	color = 'white',
+	align = '',
+	typo = '',
 	...props
 }: HeadingProps) => {
 	const Tag = level
@@ -26,8 +28,9 @@ export const Heading = ({
 			id={id}
 			className={classNames(
 				styles['heading'],
-				styles[`heading--${size}`],
-				styles[`heading--${color}`]
+				styles[`heading--${color}`],
+				styles[`heading--${align}`],
+				styles[`heading--${typo}`]
 			)}
 			{...props}
 		>

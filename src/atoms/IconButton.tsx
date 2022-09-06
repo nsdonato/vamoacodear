@@ -1,29 +1,22 @@
+import { socials } from '../models'
 import { classNames } from '../shared/classNames'
-import { Icon } from './Icon'
 import styles from './IconButton.module.scss'
-
-type HtmlButtonProps = Omit<
-	React.ButtonHTMLAttributes<HTMLButtonElement>,
-	'children'
-> & {
-	href?: undefined
-}
+import { Image } from './Image'
 
 export interface IconButtonProps {
 	mode?: 'light' | 'dark'
-	size?: 'large' | 'medium' | 'small' | 'xl'
-	label: string
+	size?: 'xl' | 'large' | 'medium' | 'small'
 	icon: string
-	children: React.ReactNode
+	children?: string
 }
 
 interface Overload {
-	(props: HtmlButtonProps & IconButtonProps): JSX.Element
+	(props: IconButtonProps): JSX.Element
 }
 
 export const IconButton: Overload = ({
 	mode = 'light',
-	size = 'medium',
+	size = 'large',
 	icon,
 	...props
 }) => {
@@ -36,11 +29,18 @@ export const IconButton: Overload = ({
 		...props,
 	}
 
+	const handleClick = (iconName: string) => {
+		const socialsNetworks = socials.find(
+			(item) => item.name.toLowerCase() == iconName
+		)
+		window.open(socialsNetworks?.url, '_blank')
+	}
+
 	return (
-		<button {...componentProps}>
+		<button {...componentProps} onClick={() => handleClick(icon)}>
 			<>
-				<Icon icon={icon} size={size} />
-				{props.children}
+				<Image icon={icon} size={size} />
+				<span className={styles['icon-btn--centered']}>{props.children}</span>
 			</>
 		</button>
 	)
