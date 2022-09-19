@@ -1,26 +1,32 @@
 export const socials = [
 	{
-		name: 'Twitch',
+		desc: 'Twitch',
 		url: 'https://www.twitch.tv/vamoacodear',
+		name: 'twitch',
 	},
 	{
-		name: 'Twitter',
-		url: 'https://twitter.com/vamoacodear',
-	},
-	{
-		name: 'Youtube',
+		desc: 'Youtube',
 		url: 'https://www.youtube.com/c/vamoacodear?sub_confirmation=1',
+		name: 'youtube',
 	},
 	{
-		name: 'Instagram',
-		url: 'https://www.instagram.com/vamoacodear/',
+		desc: 'TikTok',
+		url: 'https://www.tiktok.com/@vamoacodear',
+		name: 'tiktok',
 	},
 	{
-		name: 'Discord',
+		desc: 'Twitter',
+		url: 'https://twitter.com/vamoacodear',
+		name: 'twitter',
+	},
+	{
+		desc: 'Discord',
 		url: 'https://discord.io/vamoacodear',
+		name: 'Discord',
 	},
 	{
-		name: 'Cafecito',
-		url: 'https://cafecito.app/vamoacodear',
+		desc: 'Instagram',
+		url: 'https://www.instagram.com/vamoacodear/',
+		name: 'instagram',
 	},
 ]

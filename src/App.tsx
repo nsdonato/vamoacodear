@@ -12,8 +12,8 @@ function App() {
 			<Container tag='section'>
 				{socials.map((social) => {
 					return (
-						<IconButton key={social.name} icon={social.name.toLowerCase()}>
-							{social.name}
+						<IconButton key={social.name} icon={social.name}>
+							{social.desc}
 						</IconButton>
 					)
 				})}
