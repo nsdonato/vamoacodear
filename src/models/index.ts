@@ -22,7 +22,7 @@ export const socials = [
 	{
 		desc: 'Discord',
 		url: 'https://discord.io/vamoacodear',
-		name: 'Discord',
+		name: 'discord',
 	},
 	{
 		desc: 'Instagram',
