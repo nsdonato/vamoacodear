@@ -7,6 +7,7 @@ export interface IconButtonProps {
 	mode?: 'light' | 'dark'
 	size?: 'xl' | 'large' | 'medium' | 'small'
 	icon: string
+	alt?: string
 	children?: string
 }
 
@@ -18,6 +19,7 @@ export const IconButton: Overload = ({
 	mode = 'light',
 	size = 'large',
 	icon,
+	alt,
 	...props
 }) => {
 	const componentProps = {
@@ -39,7 +41,7 @@ export const IconButton: Overload = ({
 	return (
 		<button {...componentProps} onClick={() => handleClick(icon)}>
 			<>
-				<Image icon={icon} size={size} />
+				<Image icon={icon} size={size} alt={alt} />
 				<span className={styles['icon-btn--centered']}>{props.children}</span>
 			</>
 		</button>
