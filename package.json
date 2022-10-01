@@ -13,7 +13,8 @@
 		"preview": "vite preview",
 		"prepare": "husky install",
 		"lint": "eslint --ignore-path .gitignore . --ext .ts,.tsx",
-		"lint:fix": "npm run lint -- --fix"
+		"lint:fix": "npm run lint -- --fix",
+		"test": "vite test"
 	},
 	"browserslist": [
 		"defaults",
