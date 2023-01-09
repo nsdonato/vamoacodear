@@ -1,5 +1,3 @@
-import './App.css'
-
 import noe from '/noe.webp'
 
 import { Avatar, Heading, IconButton } from './atoms'
