@@ -25,7 +25,7 @@ export const socials = [
 	},
 	{
 		desc: 'Discord',
-		url: 'https://discord.io/vamoacodear',
+		url: 'https://discord.gg/KTnJd6PXq3',
 		name: 'discord',
 		alt: 'Imagen del logo de Discord',
 	},

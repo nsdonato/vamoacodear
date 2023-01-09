@@ -11,7 +11,7 @@ export const Image = ({ size = 'xl', icon, alt = '' }: ImageProps) => {
 	return (
 		<img
 			src={`/${icon}.webp`}
-			className={classNames(styles['icon'], styles[`icon--${size}`])}
+			className={classNames(styles.icon, styles[`icon--${size}`])}
 			alt={alt}
 		/>
 	)
