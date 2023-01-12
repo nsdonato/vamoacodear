@@ -12,12 +12,6 @@ export const socials = [
 		alt: 'Imagen del logo de Youtube',
 	},
 	{
-		desc: 'TikTok',
-		url: 'https://www.tiktok.com/@vamoacodear',
-		name: 'tiktok',
-		alt: 'Imagen del logo de TikTok',
-	},
-	{
 		desc: 'Twitter',
 		url: 'https://twitter.com/vamoacodear',
 		name: 'twitter',
@@ -29,10 +23,23 @@ export const socials = [
 		name: 'discord',
 		alt: 'Imagen del logo de Discord',
 	},
+
+	{
+		desc: 'TikTok',
+		url: 'https://www.tiktok.com/@vamoacodear',
+		name: 'tiktok',
+		alt: 'Imagen del logo de TikTok',
+	},
 	{
 		desc: 'Instagram',
 		url: 'https://www.instagram.com/vamoacodear/',
 		name: 'instagram',
 		alt: 'Imagen del logo de Instagram',
+	},
+	{
+		desc: 'Proyecto 🌎 con la comunidad',
+		url: 'https://youtube.com/playlist?list=PLX4PpbBSOPBTahDFSlH57n7oU-0-2kepC',
+		name: 'planet',
+		alt: 'Imagen de un planeta',
 	},
 ]
